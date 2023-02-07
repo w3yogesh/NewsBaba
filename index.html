@@ -90,22 +90,22 @@
 
     console.log(query, page)
 
-
+/* 
 //this block of code is runing on only localhost not on live server
     const fetchNews = async(query, pageNo) => {
         let a = await fetch(`https://newsapi.org/v2/everything?q=${query}&apiKey=ecb16b93d5354d22a4c60345437462c3&pagesize=10&page=${pageNo}`)
         let r = await a.json()
 	console.log(r);
-
+*/
 	
 	//this block is for live server and some part in server.js
-	/* 
+	
 
 	    const fetchNews = async(query, pageNo) => {
 	        let a = await fetch(`/api?q=${query}&apiKey=ecb16b93d5354d22a4c60345437462c3&pagesize=10&page=${pageNo}`)
 	        let r = await a.json()
 
-	*/
+	
         queryText.innerHTML = query.replace("+"," ")
         queryResults.innerHTML = r.totalResults
         console.log(r)
