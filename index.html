@@ -102,7 +102,7 @@
 	
 
 	    const fetchNews = async(query, pageNo) => {
-	        let a = await fetch(`/?q=${query}&apiKey=ecb16b93d5354d22a4c60345437462c3&pagesize=10&page=${pageNo}`)
+	        let a = await fetch(`/api/?q=${query}&apiKey=ecb16b93d5354d22a4c60345437462c3&pagesize=10&page=${pageNo}`)
 	        let r = await a.json()
 
 	
