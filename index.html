@@ -100,6 +100,14 @@
 */	
 	//this block is for live server and some part in server.js
 	
+	  
+	    app.get('/api', async(req, res) => {
+        console.log(req._parsedUrl.query)
+        let url = "https://newsapi.org/v2/everything?" + req._parsedUrl.query
+        let r =  await axios(url)
+        let a = r.data;
+        res.json(a)
+    })
 
 	    const fetchNews = async(query, pageNo) => {
 	        let a = await fetch(`/api/?q=${query}&apiKey=ecb16b93d5354d22a4c60345437462c3&pagesize=10&page=${pageNo}`)
