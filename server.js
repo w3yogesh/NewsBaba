@@ -10,7 +10,6 @@ app.get('/', (req, res) => {
 })
 
 
-/*
 //this block for live server deployement and some part in index.html
 
     app.get('/api', async(req, res) => {
@@ -20,7 +19,7 @@ app.get('/', (req, res) => {
         let a = r.data;
         res.json(a)
     })
-*/
+
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
