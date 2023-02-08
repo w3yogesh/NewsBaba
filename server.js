@@ -2,7 +2,7 @@ const express = require('express')
 const path = require('path')
 const axios = require('axios')
 const app = express()
-const port = 5500
+const port = 8080
 
 
 app.get('/', (req, res) => {
@@ -10,7 +10,7 @@ app.get('/', (req, res) => {
 })
 
 
-
+/*
 //this block for live server deployement and some part in index.html
 
     app.get('/api', async(req, res) => {
@@ -20,7 +20,7 @@ app.get('/', (req, res) => {
         let a = r.data;
         res.json(a)
     })
-
+*/
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
