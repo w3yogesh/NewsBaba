@@ -6,7 +6,7 @@ const port = 8080
 
 
 app.get('/', (req, res) => {
-  res.sendFile("index.html",  { root: path.join(__dirname) } )
+  res.sendFile("inex.html",  { root: path.join(__dirname) } )
 })
 
 
